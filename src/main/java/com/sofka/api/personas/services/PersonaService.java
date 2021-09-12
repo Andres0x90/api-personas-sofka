@@ -41,7 +41,7 @@ public class PersonaService implements InterfacePersonaService
     public Map<String, String> eliminar(Integer id) {
         personaRepository.deleteById(id);
         HashMap<String, String> response = new HashMap<>();
-        response.put("Mensaje", "Persona eliminada correctamente");
+        response.put("mensaje", "Persona eliminada correctamente");
 
         return response;
     }
