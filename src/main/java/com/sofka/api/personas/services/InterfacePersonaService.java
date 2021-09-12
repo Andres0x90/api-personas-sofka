@@ -10,5 +10,5 @@ public interface InterfacePersonaService
     public Persona listarPorId(Integer id);
     public Persona guardar(Persona persona);
     public Persona actualizar(Persona persona);
-    public Persona eliminar(Integer id);
+    public void eliminar(Integer id);
 }

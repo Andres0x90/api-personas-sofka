@@ -17,22 +17,23 @@ public class PersonaService implements InterfacePersonaService
     }
 
     @Override
-    public Persona listarPorId(Integer id) {
-        return null;
+    public Persona listarPorId(Integer id)
+    {
+        return personaRepository.findById(id).orElseThrow();
     }
 
     @Override
     public Persona guardar(Persona persona) {
-        return null;
+        return personaRepository.save(persona);
     }
 
     @Override
     public Persona actualizar(Persona persona) {
-        return null;
+        return personaRepository.save(persona);
     }
 
     @Override
-    public Persona eliminar(Integer id) {
-        return null;
+    public void eliminar(Integer id) {
+        personaRepository.deleteById(id);
     }
 }
